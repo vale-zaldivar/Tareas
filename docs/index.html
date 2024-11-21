@@ -1,45 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Curriculum</title>
-    <link href="estilo.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
     <style>
-        /* Centrar el título y la imagen */
-        .centered {
-            text-align: center; /* Centra el contenido horizontalmente */
+        /* Fondo blanco para el cuerpo de la página */
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif; /* Fuente básica */
+            color: #333; /* Color de texto principal */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fondo para el encabezado */
+        h1 {
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Color de texto blanco */
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            font-size: 1.2em; /* Tamaño de texto mayor */
+            line-height: 1.5; /* Espaciado entre líneas */
+            color: #555; /* Color de texto gris oscuro */
         }
 
         /* Estilo para el nombre en blanco */
         .nombre {
             color: white; /* Nombre en color blanco */
+            font-size: 1.8em; /* Tamaño mayor */
+            font-weight: bold;
         }
 
-        /* Estilos para el footer */
+        /* Centrar imagen y nombre */
+        .centered {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Fondo y color de enlaces */
+        a {
+            color: #0066cc; /* Color de enlaces */
+            text-decoration: none; /* Sin subrayado */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Subraya cuando el mouse pasa sobre el enlace */
+        }
+
+        /* Estilo para el footer */
         .centered-footer {
-            text-align: center; /* Centra el contenido horizontalmente */
-            margin-top: 20px; /* Espacio superior */
-            font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
-            color: #fff; /* Color del texto (blanco) */
-            background-color: #333; /* Fondo oscuro para contraste */
-            padding: 10px 0; /* Espaciado interno */
+            text-align: center;
+            background-color: #333; /* Fondo oscuro */
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
         }
 
         .centered-footer a {
-            color: #fff; /* Color blanco para los enlaces */
-            text-decoration: none; /* Quita el subrayado del enlace */
+            color: white; /* Color blanco para los enlaces del footer */
+            text-decoration: none;
         }
 
         .centered-footer a:hover {
-            text-decoration: underline; /* Subraya al pasar el cursor */
+            text-decoration: underline; /* Subrayado al pasar el cursor */
+        }
+
+        /* Estilo para el apartado de Estudios y Experiencia */
+        .estudios, .experiencia {
+            background-color: #f4f4f4; /* Fondo gris claro */
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Fondo para la sección de Experiencia */
+        .experiencia {
+            background-color: #e0e0e0; /* Fondo gris más claro */
         }
     </style>
 </head>
 <body>
 
-    <h1 class="centered">Curriculum Vitae</h1>
+    <!-- Título de la página -->
+    <h1>Curriculum Vitae</h1>
 
     <div class="centered">
-        <b class="nombre">Valentina Zaldívar Calvanese</b>
+        <p class="nombre">Valentina Zaldívar Calvanese</p>
         <p><img src="foto.jpg" alt="Foto Valentina Zaldívar" width="200"></p>
     </div>
 
@@ -47,25 +98,33 @@
     <p>- 22 años</p>
     <p>- Estudiante de Periodismo Pontificia Universidad Católica de Chile</p>
 
-    <p><b>Estudios</b></p>
-    <p><a href="https://www.redland.cl/">Enseñanza básica y media en Redland School (2007 - 2020)</a></p>
-    <p><a href="https://www.uandes.cl/carrera/derecho/">Primer año de Derecho Universidad de los Andes (2021)</a></p>
-    <p><a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">Periodismo Pontificia Universidad Católica de Chile (2022 - a la fecha)</a></p>
+    <!-- Sección de Estudios -->
+    <div class="estudios">
+        <p><b>Estudios</b></p>
+        <p><a href="https://www.redland.cl/">Enseñanza básica y media en Redland School (2007 - 2020)</a></p>
+        <p><a href="https://www.uandes.cl/carrera/derecho/">Primer año de Derecho Universidad de los Andes (2021)</a></p>
+        <p><a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">Periodismo Pontificia Universidad Católica de Chile (2022 - a la fecha)</a></p>
+    </div>
 
-    <p><b>Experiencia laboral</b></p>
-    <p>- Marketing Analyst para Dentons Chile (septiembre 2024 - a la fecha)</p>
-    <p>- Ayudante Test de Actualidad (marzo 2024 - a la fecha)</p>
-    <p>- Profesora clases particulares de Inglés (agosto - a la fecha)</p>
-    <p>- Reponedora Servex para Unilever (septiembre - diciembre 2023)</p>
-    <p>- Vendedora Siux World Pádel Tour (marzo 2024)</p>
+    <!-- Sección de Experiencia laboral -->
+    <div class="experiencia">
+        <p><b>Experiencia laboral</b></p>
+        <p>- Marketing Analyst para Dentons Chile (septiembre 2024 - a la fecha)</p>
+        <p>- Ayudante Test de Actualidad (marzo 2024 - a la fecha)</p>
+        <p>- Profesora clases particulares de Inglés (agosto - a la fecha)</p>
+        <p>- Reponedora Servex para Unilever (septiembre - diciembre 2023)</p>
+        <p>- Vendedora Siux World Pádel Tour (marzo 2024)</p>
+    </div>
 
+    <!-- Footer -->
     <footer class="centered-footer">
         <p>Autora: Valentina Zaldívar</p>
         <p><a href="mailto:vzaldivar@uc.cl">vzaldivar@uc.cl</a></p>
     </footer>
-    
+
 </body>
 </html>
+
 
           
  
