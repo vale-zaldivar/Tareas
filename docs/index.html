@@ -1,43 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Curriculum</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta name="author" content="Valentina Zaldívar Calvanese">
-    <meta name="description" content="Curriculum Vitae de Valentina Zaldívar Calvanese, estudiante de Periodismo en la Pontificia Universidad Católica de Chile.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="estilo.css" rel="stylesheet">
+    <title>Curriculum</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <style>
+        /* Fondo blanco para el cuerpo de la página */
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fondo rosado para el encabezado */
+        h1 {
+            background-color: #f08cb5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        .nombre {
+            color: #333;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .centered {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            border: 5px solid #00bcd4;
+            padding: 5px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .centered-footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        .centered-footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .centered-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .estudios, .experiencia {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .experiencia {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Título de la página -->
     <h1>Curriculum Vitae</h1>
 
-    <p><b>Valentina Zaldívar Calvanese</b></p>
-    <img src="foto.jpg" alt="Foto Valentina Zaldívar" width="200">
+    <div class="centered">
+        <p class="nombre">Valentina Zaldívar Calvanese</p>
+        <p><img src="foto.jpg" alt="Foto Valentina Zaldívar" width="200"></p>
+    </div>
 
     <p>- Chilena</p>
     <p>- 22 años</p>
     <p>- Estudiante de Periodismo Pontificia Universidad Católica de Chile</p>
 
-    <h2>Estudios</h2>
-    <p><a href="https://www.redland.cl/">Enseñanza básica y media en Redland School (2007 - 2020)</a></p>
-    <p><a href="https://www.uandes.cl/carrera/derecho/">Primer año de Derecho Universidad de los Andes (2021)</a></p>
-    <p><a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">Periodismo Pontificia Universidad Católica de Chile (2022 - a la fecha)</a></p>
+    <!-- Sección de Estudios -->
+    <div class="estudios">
+        <p><b>Estudios</b></p>
+        <p><a href="https://www.redland.cl/">Enseñanza básica y media en Redland School (2007 - 2020)</a></p>
+        <p><a href="https://www.uandes.cl/carrera/derecho/">Primer año de Derecho Universidad de los Andes (2021)</a></p>
+        <p><a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">Periodismo Pontificia Universidad Católica de Chile (2022 - a la fecha)</a></p>
+    </div>
 
-    <h2>Experiencia laboral</h2>
-    <p>- Marketing Analist para Dentons Chile (septiembre 2024 - a la fecha)</p>
-    <p>- Ayudante Test de Actualidad (marzo 2024 - a la fecha)</p>
-    <p>- Profesora clases particulares de Inglés (agosto - a la fecha)</p>
-    <p>- Reponedora Servex para Unilever (septiembre - diciembre 2023)</p>
-    <p>- Vendedora Siux World Pádel Tour (marzo 2024)</p>
+    <!-- Sección de Experiencia laboral -->
+    <div class="experiencia">
+        <p><b>Experiencia laboral</b></p>
+        <p>- Marketing Analyst para Dentons Chile (septiembre 2024 - a la fecha)</p>
+        <p>- Ayudante Test de Actualidad (marzo 2024 - a la fecha)</p>
+        <p>- Profesora clases particulares de Inglés (agosto - a la fecha)</p>
+        <p>- Reponedora Servex para Unilever (septiembre - diciembre 2023)</p>
+        <p>- Vendedora Siux World Pádel Tour (marzo 2024)</p>
+    </div>
 
     <!-- Footer -->
     <footer class="centered-footer">
         <p>Autora: Valentina Zaldívar</p>
         <p><a href="mailto:vzaldivar@uc.cl">vzaldivar@uc.cl</a></p>
     </footer>
+
 </body>
 </html>
+
 
 
 
